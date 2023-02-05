@@ -5,6 +5,8 @@ Artificial Video Cuts Editor
 
 Uses an aethetic predictor on top of clip as with https://github.com/grexzen/SD-Chad but applies it to a folder of video files and plays any segments that pass a score threshold test.
 
+Features fun pseudo VHS styled status messages.
+
 Provided with a pre-trained predictor that returns high predictions for frames that feature amongst other things:
 
 - Female faces

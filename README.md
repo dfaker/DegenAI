@@ -5,13 +5,18 @@ Artificial Video Cuts Editor
 
 Uses an aethetic predictor on top of clip as with https://github.com/grexzen/SD-Chad but applies it to a folder of video files and plays any segments that pass a score threshold test.
 
-Provided with a pre-trained predictor that returns high predictions for frame that feature amongst other things:
+Provided with a pre-trained predictor that returns high predictions for frames that feature amongst other things:
 
 - Female faces
+- Heavy makeup looks
 - Regions of human skin
 - Open mouths
-- Oiled globular surfaces
+- Flesh coloured globules, particularly if oiled
 - Feet
+- Starfish
+- Orchids
+- Peaches
+- Doo-Dahs, Tuppences, Fandangoes and Foofs
 - Flesh coloured worms and snakes
 
 Requires libmpv, python-mpv, PIL and torch. 

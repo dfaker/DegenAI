@@ -21,4 +21,4 @@ Provided with a pre-trained predictor that returns high predictions for frames t
 - Doo-Dahs, Tuppences, Fandangoes and Foofs
 - Flesh coloured worms and snakes
 
-Requires libmpv, python-mpv, PIL and torch. 
+Requires libmpv, python-mpv, PIL, clip and torch. 

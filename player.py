@@ -4,10 +4,9 @@ import os
 import threading
 import time
 import os 
-import cv2
-import shutil
+
 import json
-import zlib
+
 import subprocess as sp
 import random
 import itertools
@@ -21,12 +20,13 @@ import clip
 from PIL import Image, ImageFont, ImageDraw
 from collections import deque
 from queue import PriorityQueue, Empty
+import traceback
 
 scriptPath = os.path.dirname(os.path.abspath(__file__))
 basescriptPath = os.path.split(scriptPath)[0]
 os.environ["PATH"] = scriptPath + os.pathsep + os.environ["PATH"]
 
-basePath = 'Z:\\completeTorrents'
+basePath = 'Y:\\'
 
 if not os.path.exists(basePath):
     print(basePath, 'path for video file search does not exist')
@@ -109,7 +109,7 @@ random.shuffle(videoList)
 queueLimit = 9000
 videoHotQueue = PriorityQueue(queueLimit)
 
-thresh=0.5
+thresh=0.7
 fps = 1
 
 totalSecondsFound = 0.01
@@ -132,6 +132,8 @@ def scanThread():
 
             if w < 720 or h < 720 or w < h:
                 continue
+            
+            w,h = int(w),int(h)
 
             length = sp.Popen(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'default=noprint_wrappers=1:nokey=1', videoFile], stdout=sp.PIPE).communicate()[0]
             length = float(length)
@@ -193,6 +195,7 @@ def scanThread():
                     lastStart = None
                     scores = []
         except Exception as e:
+            print(traceback.format_exc())
             print(e)
 
 scanThreadWorkers = [threading.Thread(target=scanThread,daemon=True) for _ in range(1)]
@@ -235,7 +238,7 @@ lastFilename = None
 from datetime import timedelta
 totalSecondsPlayed=0.01
 
-def updateStats()
+def updateStats():
     cacheFillSpeed = (totalSecondsFound/(time.time()-scanstart))
     cacheFillSpeedWarn = ''
     if cacheFillSpeed < 1.0:

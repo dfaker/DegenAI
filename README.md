@@ -3,7 +3,7 @@ Artificial Video Cuts Editor
 
 ![image](https://user-images.githubusercontent.com/35278260/216849988-188fc56d-d0cb-4845-8fa8-fbe674963b93.png)
 
-Uses an aethetic predictor on top of clip as with https://github.com/grexzen/SD-Chad but applies it to a folder of video files and plays any segments that pass a score threshold test.
+Uses an aethetic predictor on top of [clip](https://github.com/openai/CLIP) as with [SD-Chad](https://github.com/grexzen/SD-Chad) but applies it to a folder of video files and plays any segments that pass a score threshold test.
 
 Features fun pseudo VHS styled status messages.
 

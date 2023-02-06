@@ -1,8 +1,12 @@
 # DegenAI
 Artificial Video Cuts Editor
 
+UI when paused searching for new segments:
 ![UI](https://user-images.githubusercontent.com/35278260/216849988-188fc56d-d0cb-4845-8fa8-fbe674963b93.png)
-![examplar selected frames grid](https://user-images.githubusercontent.com/35278260/216857176-6dc086f7-eeee-4183-920b-43e531c5eb65.jpg)
+
+Selected scene samples from mainstream film and television:
+![image-grid](https://user-images.githubusercontent.com/35278260/216857430-7d49f1c9-b2fd-4ad5-aa17-86769d7a5aa9.jpg)
+
 
 Uses an aethetic predictor on top of [clip](https://github.com/openai/CLIP) as with [SD-Chad](https://github.com/grexzen/SD-Chad) but applies it to a folder of video files and plays any segments that pass a score threshold test.
 

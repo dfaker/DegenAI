@@ -25,5 +25,6 @@ Provided with a pre-trained predictor that returns high predictions for frames t
 - Peaches
 - Doo-Dahs, Tuppences, Fandangoes and Foofs
 - Flesh coloured worms and snakes
+- Generalised degeneracy
 
 Requires libmpv, python-mpv, PIL, clip and torch. 

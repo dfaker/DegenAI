@@ -12,6 +12,8 @@ Uses an aethetic predictor on top of [clip](https://github.com/openai/CLIP) as w
 
 Features fun pseudo VHS styled status messages.
 
+When run on a dataset that contains it's preferred degenerate content and a threshold of 0.5, detections at the rate of 3 seconds of output video stream per one second of scan time easily filling the buffer for a constant curated stream, for mainstream datasets much lower acceptance rates are seen.
+
 Provided with a pre-trained predictor that returns high predictions for frames that feature amongst other things:
 
 - Female faces

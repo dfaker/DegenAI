@@ -1,5 +1,5 @@
 # DegenAI
-Artificial Video Cuts Editor
+Degenerate Artificial Video Cuts Editor
 
 UI when paused searching for new segments:
 ![UI](https://user-images.githubusercontent.com/35278260/216849988-188fc56d-d0cb-4845-8fa8-fbe674963b93.png)

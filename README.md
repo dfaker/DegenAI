@@ -2,7 +2,7 @@
 Degenerate AI Video Streamer
 
 UI when paused searching for new segments:
-![image](https://user-images.githubusercontent.com/35278260/217312195-82b8f0bb-70d7-4453-b4c7-19d01efa0212.png)
+![image](https://user-images.githubusercontent.com/35278260/217312881-ab8bf12c-2904-4865-8340-893b387b54a5.png)
 
 Selected scene samples from mainstream film and television:
 ![image-grid](https://user-images.githubusercontent.com/35278260/216857430-7d49f1c9-b2fd-4ad5-aa17-86769d7a5aa9.jpg)
